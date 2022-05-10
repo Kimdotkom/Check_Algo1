@@ -1,0 +1,31 @@
+ALGORITHM lenght
+VAR
+  
+    sentence: STRING;
+    countl,countw,countv,i: INTEGER :=0;
+BEGIN
+
+REPEAT
+    read(sentence);
+UNTIL (sentence:STRING)
+
+ for (i < (sentence.lenght)) STEP STEP DO
+ 
+ countl := countl+1;
+
+ if (sentence[i]==" ") or (sentence[i]==".") then
+
+ countw := countw+1;
+
+ END_IF
+
+ If sentence[i]in ("a","e","i","u","o","y") then
+ countv:=countv+1;
+
+END_IF
+
+
+ write(countl);
+ write(countw);
+ write(countv);
+END
